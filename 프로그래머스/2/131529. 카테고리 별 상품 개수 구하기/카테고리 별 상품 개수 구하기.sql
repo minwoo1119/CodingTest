@@ -1,0 +1,4 @@
+select LEFT(PRODUCT_CODE,2) as CATEGORY, count(*) as PRODUCTS
+from PRODUCT
+group by LEFT(PRODUCT_CODE,2)
+order by PRODUCT_CODE asc
